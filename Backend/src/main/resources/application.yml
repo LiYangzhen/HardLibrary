@@ -1,0 +1,29 @@
+server:
+  port: 8081
+spring:
+  mail:
+    host: smtp.163.com
+    username: goldplain@163.com
+    password: RCJLJBZRVTFBZAXD
+    default-encoding: UTF-8
+    port: 465
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+  servlet:
+    multipart:
+      max-file-size: 16MB
+      max-request-size: 16MB
+  datasource:
+    username: root
+    password: "Di5xiaozu!"
+    url: jdbc:mysql://139.196.174.46:3306/hardlibrary?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+jwt:
+  token:
+    #18000000
+    validity: 18000000
+    secret: FdseFdse2021
